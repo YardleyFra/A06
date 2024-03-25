@@ -1,0 +1,153 @@
+/* Reset some basic elements */
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+blockquote,
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Basic styling */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header,
+#mission-statement,
+#ticket-packages,
+#guest-speakers,
+footer {
+    padding: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+#logo {
+    max-width: 100px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #000;
+    margin: 20px 0;
+}
+
+p,
+li {
+    font-size: 16px;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 20px;
+    border-left: 3px solid #ccc;
+    margin: 20px 0;
+}
+
+#ticket-packages {
+    background-color: #f7f7f7;
+    /* Adjust the color to match the background of the ticket section */
+}
+
+#ticket-packages ul {
+    list-style: none;
+}
+
+#ticket-packages li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+#guest-speakers {
+    padding-top: 0;
+}
+
+.speaker {
+    margin-bottom: 20px;
+}
+
+.speaker img {
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    height: auto;
+}
+
+.speaker h3 {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+/* Clearfix for floated elements */
+
+.speaker:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* CSS for speaker details */
+
+.speaker {
+    border: 1px solid #ddd;
+    /* Adjust the border color as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+    /* Clear fix for the floated image */
+}
+
+.speaker img {
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+    /* Adjust as per your image's aspect ratio */
+    height: auto;
+    border-radius: 50%;
+    /* Makes the image round */
+}
+
+.speaker h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    /* Adjust color as needed */
+    margin-bottom: 5px;
+    /* Space between the date and the name */
+}
+
+.speaker p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    /* Makes the speaker's name bold */
+}
